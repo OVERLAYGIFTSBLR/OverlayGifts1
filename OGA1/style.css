@@ -110,34 +110,33 @@
   transform: scale(1.1);
 }
 </style>
-/* WHATSAPP BUTTON STYLING */
-#whatsappButton {
+/* Instagram Button Styling */
+#instagramButton {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  width: 55px;
-  height: 55px;
-  z-index: 100000; 
+  width: 50px;
+  height: 50px;
+  z-index: 1000; /* Ensures it stays above the AR scene and panels */
   cursor: pointer;
-  background: #25D366; /* WhatsApp Green */
-  border-radius: 50%;    /* Circular button looks more natural for WhatsApp */
+  transition: transform 0.2s ease, opacity 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  transition: transform 0.2s ease;
-  text-decoration: none;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
-#whatsappButton img {
+#instagramButton img {
   width: 35px;
   height: 35px;
 }
 
-#whatsappButton:hover {
+#instagramButton:hover {
   transform: scale(1.1);
 }
 
-#whatsappButton:active {
+#instagramButton:active {
   transform: scale(0.95);
 }
